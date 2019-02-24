@@ -1,0 +1,41 @@
+:host {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  max-width: 400px;
+  margin: 20px;
+}
+
+a {
+  text-decoration: unset;
+  color: black;
+}
+
+mat-card-title {
+  /* autoprefixer: off */
+  display: -webkit-box;
+  /* autoprefixer: on */
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+mat-card-content {
+  /* autoprefixer: off */
+  display: -webkit-box;
+  /* autoprefixer: on */
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*
+/deep/ .mat-card-header-text {
+  margin: unset!important;
+}
+*/

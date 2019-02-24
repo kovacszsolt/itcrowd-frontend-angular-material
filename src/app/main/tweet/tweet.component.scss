@@ -1,0 +1,11 @@
+.mat-card-image {
+  margin-left: 10px;
+}
+
+/deep/ .mat-button {
+  text-transform: uppercase
+}
+
+/deep/ .mat-card-header-text {
+  margin: unset;
+}

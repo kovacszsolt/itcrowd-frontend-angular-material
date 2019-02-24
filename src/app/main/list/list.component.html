@@ -1,0 +1,16 @@
+<a href="" [routerLink]="tweet.slug" *ngFor="let tweet of tweetList">
+  <mat-card class="card" matRipple>
+    <mat-card-header>
+      <mat-card-title>{{tweet.title}}</mat-card-title>
+      <mat-card-subtitle>{{tweet.createTime}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="'https://itnews.cloud/image/size1/'+tweet.slug+'.'+tweet.extension"
+         [alt]="tweet.title">
+    <mat-card-subtitle><a [routerLink]="['/tag',tag]" *ngFor="let tag of tweet.tags"> {{tag}} </a></mat-card-subtitle>
+    <mat-card-content>
+      <p>
+        {{tweet.description}}
+      </p>
+    </mat-card-content>
+  </mat-card>
+</a>

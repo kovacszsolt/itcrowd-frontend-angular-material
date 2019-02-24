@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>ITCloud . News</span>
+    <span class="spacer"></span>
+    <button mat-button [routerLink]="'/about'">About</button>
+    <button mat-button [routerLink]="'/'">Start</button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<main>
+  <router-outlet></router-outlet>
+</main>
