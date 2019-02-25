@@ -2,7 +2,6 @@ import {Injectable} from '@angular/core';
 import {openDb} from 'idb';
 import {Observable, Subject} from 'rxjs';
 
-@Injectable()
 export class AppServiceDB {
   protected _dataChange: Subject<any> = new Subject<any>();
   protected _dbPromise;

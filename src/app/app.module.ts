@@ -6,6 +6,8 @@ import {AppComponent} from './app.component';
 import {HttpClientModule} from '@angular/common/http';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {AppService} from './app.service';
+import {AppServiceRemote} from './app.service.remote';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     MatSnackBarModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [AppService,AppServiceRemote],
   bootstrap: [AppComponent]
 })
 export class AppModule {
